@@ -1,0 +1,4 @@
+# 下限是能用的最低版本；开发和打包时实际用的是 PySide6 6.12.0、PyMuPDF 2.1、markdown-it-py 4.3.0
+PySide6>=6.6
+PyMuPDF>=1.24
+markdown-it-py>=3.0
