@@ -1,8 +1,14 @@
 # RuiPDF
 
-在 PDF 讲义上手写标注的 Windows 桌面工具，为无屏数位板（如 Wacom CTL-672）设计：压感书写、荧光笔、套索、遮挡复习，并能把 AI 的回答连同公式排好版贴到页面上。
+**边看讲义边问 AI 的 PDF 笔记工具**（Windows，配合数位板手写）。
+A PDF note-taking tool for studying with AI, on Windows with a pen tablet. **[English below](#english)**.
 
-A Windows desktop tool for handwriting on PDF lecture notes with a screenless pen tablet: pressure-sensitive ink, highlighter, lasso, cover-up review, and pasting AI answers (Markdown + LaTeX) onto the page as typeset vector content. **[English below](#english)**.
+用 AI 学习时，回答里常常带着公式。想把它记到讲义上，要么手抄一遍，很慢；要么粘贴进去，公式变成一堆 `$\frac{...}$` 源码。RuiPDF 把这两步都变成一下：
+
+1. **问**：在讲义上圈一块，一键把截图（或选中的文字）送进贴靠在旁边的 Claude / ChatGPT 窗口。用的是你自己的桌面应用，不需要 API 密钥。
+2. **记**：把回答复制回来按 Ctrl+V，公式、表格、代码自动排好版，以矢量内容贴在讲义上，之后还能改原文、改宽度。
+
+除此之外，它也是一个完整的手写标注工具：压感笔、荧光笔、套索、文字、遮挡复习。
 
 ![RuiPDF 截图](docs/screenshot.png)
 
@@ -72,7 +78,14 @@ python -m pyflakes ruipdf
 
 ## English
 
-RuiPDF is a PDF annotation tool for Windows, built for studying from lecture notes with a screenless pen tablet such as the Wacom CTL-672. It is written in Python with PySide6 (Qt 6) and PyMuPDF.
+RuiPDF is a PDF note-taking tool for studying with AI. It runs on Windows and is built for handwriting with a screenless pen tablet such as the Wacom CTL-672.
+
+AI answers are full of formulas. Getting one into your lecture notes usually means copying it out by hand, which is slow, or pasting it and getting raw `$\frac{...}$` source. RuiPDF makes both directions one step:
+
+1. **Ask**: lasso a region of the page and send the screenshot (or the selected text) to the Claude or ChatGPT window docked beside RuiPDF. It uses your own desktop app, so no API key is needed.
+2. **Keep**: copy the answer and press Ctrl+V. Formulas, tables and code are typeset and placed on the page as vector content, and you can still edit the source or change the width afterwards.
+
+It is also a complete handwriting annotation tool: pressure-sensitive pen, highlighter, lasso, text and cover-up review. It is written in Python with PySide6 (Qt 6) and PyMuPDF.
 
 ### Features
 
