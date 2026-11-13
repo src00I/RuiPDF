@@ -10,7 +10,7 @@ A PDF note-taking tool for studying with AI, on Windows with a pen tablet. **[En
 
 除此之外，它也是一个完整的手写标注工具：压感笔、荧光笔、套索、文字、遮挡复习。
 
-![RuiPDF 截图](docs/screenshot.png)
+![RuiPDF：左边是讲义和贴回来的回答，右边是贴靠的 Claude 窗口](docs/promo.png)
 
 ## 功能
 
